@@ -10,15 +10,18 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### pseudo code
 ```
-npm run build
+1. setup - create random population
+2. calc fitness
+3. crossover by fitness (higher fitness - higher propability for crossover)
+4. mutation
+5. replace old population
+6. repeat 2-6 until find phrase 
 ```
 
-### Lints and fixes files
+### Important files:
 ```
-npm run lint
+App.vue - root vue component - there you can configure params(population size, mutation probability etc).
+DNAFactory - represent phrase - has 2 properties genes(chars) and fitness. has function for calcFitness, crossover with another partner and mutation
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
